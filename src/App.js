@@ -3,7 +3,11 @@ import "./App.css";
 import { router } from "./routes/routes";
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <div className="max-w-6xl	mx-auto">
+      <RouterProvider router={router}></RouterProvider>
+    </div>
+  );
 }
 
 export default App;
