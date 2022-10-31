@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../src/assets/logo.svg";
 
 const Home = () => {
   return (
@@ -27,10 +28,10 @@ const Home = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+                <a href="/">Item 1</a>
               </li>
               <li tabIndex={0}>
-                <a className="justify-between">
+                <a href="/" className="justify-between">
                   Parent
                   <svg
                     className="fill-current"
@@ -44,27 +45,29 @@ const Home = () => {
                 </a>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a href="/">Submenu 1</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a href="/">Submenu 2</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a href="/">Item 3</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a href="/" className="btn btn-ghost normal-case text-xl">
+            <img src={logo} alt="" />
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a>Item 1</a>
+              <a href="/">Item 1</a>
             </li>
             <li tabIndex={0}>
-              <a>
+              <a href="/">
                 Parent
                 <svg
                   className="fill-current"
@@ -78,20 +81,22 @@ const Home = () => {
               </a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a href="/">Submenu 1</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a href="/">Submenu 2</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <a href="/">Item 3</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          <a href="/" className="btn">
+            Get started
+          </a>
         </div>
       </div>
     </div>
