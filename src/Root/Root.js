@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
 
-const root = () => {
+const Root = () => {
   return (
     <div>
       <Home></Home>
@@ -13,4 +13,4 @@ const root = () => {
   );
 };
 
-export default root;
+export default Root;
