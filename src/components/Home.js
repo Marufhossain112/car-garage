@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../src/assets/logo.svg";
+import Banner from "./Banner";
 
 const Home = () => {
   const menuItems = (
@@ -13,7 +14,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 mb-12">
+      <div className="navbar bg-base-100 mb-12 pt-12">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -47,9 +48,10 @@ const Home = () => {
           <ul className="menu menu-horizontal p-0">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-warning">Warning</button>
+          <button className="btn btn-outline btn-warning">Appointment</button>
         </div>
       </div>
+      <Banner></Banner>
     </div>
   );
 };
